@@ -7,3 +7,15 @@ release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
+.gradle
+.DS_Store
+/build
+build/
+*.iml
+/.gradle
+/local.properties
+/.idea
+/captures
+*.apk
+gradle/
+
