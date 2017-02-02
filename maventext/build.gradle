@@ -33,14 +33,14 @@ dependencies {
 
 // ext is a gradle closure allowing the declaration of global properties
 ext {
-    PUBLISH_GROUP_ID = 'com.Tongson'
+    PUBLISH_GROUP_ID = 'pr.Tongson'
     PUBLISH_ARTIFACT_ID = 'demo'
     PUBLISH_VERSION = android.defaultConfig.versionName
 }
 
 uploadArchives {
     repositories.mavenDeployer {
-        def deployPath = file(getProperty('aar.maventest'))
+        def deployPath = file(getProperty('aar.path'))
         repository(url: "file://${deployPath.absolutePath}")
         pom.project {
             groupId project.PUBLISH_GROUP_ID
