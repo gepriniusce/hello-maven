@@ -2,14 +2,13 @@ apply plugin: 'com.android.library'
 apply plugin: 'maven'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
-        minSdkVersion 15
-        targetSdkVersion 25
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionName rootProject.ext.VERSION_NAME
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -33,8 +32,8 @@ dependencies {
 
 // ext is a gradle closure allowing the declaration of global properties
 ext {
-    PUBLISH_GROUP_ID = 'pr.Tongson'
-    PUBLISH_ARTIFACT_ID = 'demo'
+    PUBLISH_GROUP_ID = "${PUBLISH_GROUP_ID}"
+    PUBLISH_ARTIFACT_ID = "${PUBLISH_ARTIFACT_ID}"
     PUBLISH_VERSION = android.defaultConfig.versionName
 }
 
@@ -49,14 +48,4 @@ uploadArchives {
         }
     }
 }
-//uploadArchives {
-//    repositories.mavenDeployer {
-//        def mavenRepositoryPath = file(getProperty('aar.maventest'))
-//        repository(url: "file://${mavenRepositoryPath.absolutePath}")
-//        pom.project {
-//            groupId "com.zdd.maventest"
-//            artifactId "maventest"
-//            version 1.1
-//        }
-//    }
-//}
+

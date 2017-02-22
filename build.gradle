@@ -18,3 +18,11 @@ allprojects {
     }
 }
 
+ext {
+    minSdkVersion = 15
+    compileSdkVersion = 25
+    targetSdkVersion = compileSdkVersion
+    buildToolsVersion = '25.0.2'
+    VERSION_NAME = "${APP_VERSION_NAME}"
+}
+
