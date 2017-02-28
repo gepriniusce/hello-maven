@@ -13,6 +13,8 @@ public class MavenActivity extends AppCompatActivity {
         setContentView(R.layout.activity_maven);
         TextView textView = (TextView) findViewById(R.id.text);
         textView.setText("23333333333333333333333");
+        
+        setText("666666666666666666");
     }
 
 
