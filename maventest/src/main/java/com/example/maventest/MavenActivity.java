@@ -11,7 +11,7 @@ public class MavenActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maven);
-        TextView textView = (TextView) findViewById(R.id.text);
+        textView = (TextView) findViewById(R.id.text);
         textView.setText("23333333333333333333333");
         
         setText("666666666666666666");
