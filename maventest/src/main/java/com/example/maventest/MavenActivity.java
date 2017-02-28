@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 public class MavenActivity extends AppCompatActivity {
-    TextView textView;
+    private TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -13,6 +13,11 @@ public class MavenActivity extends AppCompatActivity {
         setContentView(R.layout.activity_maven);
         TextView textView = (TextView) findViewById(R.id.text);
         textView.setText("23333333333333333333333");
+    }
+
+
+    public MavenActivity getMavenActivity() {
+        return this;
     }
 
 
