@@ -1,4 +1,4 @@
-package com.example.maventext;
+package com.example.maventest;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

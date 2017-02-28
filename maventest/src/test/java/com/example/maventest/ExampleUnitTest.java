@@ -1,4 +1,4 @@
-package com.example.maventext;
+package com.example.maventest;
 
 import org.junit.Test;
 
