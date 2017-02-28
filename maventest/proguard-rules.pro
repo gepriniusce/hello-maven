@@ -25,3 +25,7 @@
 -verbose    # 混淆时是否记录日志
 -ignorewarnings  # 忽略警告，避免打包时某些警告出现
 -optimizations !code/simplification/arithmetic,!code/simplification/cast,!field/*,!class/merging/*  # 混淆时所采用的算法
+
+-keepclassmembers class * extends android.app.Activity {
+   public void *(android.view.View);
+}
